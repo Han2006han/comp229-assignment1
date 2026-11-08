@@ -151,7 +151,7 @@ def build(out_path):
     y -= 38
     page.text(MARGIN, y, "WEB DEVELOPER & COMPUTER PROGRAMMING STUDENT", 9.6, bold=True, color=BRAND, track=1.1)
     y -= 16
-    contact = "Toronto, ON  |  han@example.com  |  (416) 555-0142  |  github.com/Han2006han"
+    contact = "Suzhou, China  |  sergeyhans529@gmail.com  |  +44 7763370061  |  github.com/Han2006han"
     page.text(MARGIN, y, contact, 9.0, color=MUTED)
     y -= 10
     page.line(MARGIN, y, PAGE_W - MARGIN, y, 1.4, BRAND)

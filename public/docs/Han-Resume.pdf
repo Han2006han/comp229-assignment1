@@ -19,11 +19,11 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
 endobj
 7 0 obj
-<< /Length 6472 >>
+<< /Length 6480 >>
 stream
 BT /F2 26 Tf 0.080 0.080 0.160 rg 0.000 Tc 48.00 724.00 Td (HAN) Tj ET
 BT /F2 9.6 Tf 0.310 0.270 0.880 rg 1.100 Tc 48.00 698.00 Td (WEB DEVELOPER & COMPUTER PROGRAMMING STUDENT) Tj ET
-BT /F1 9.0 Tf 0.360 0.360 0.450 rg 0.000 Tc 48.00 682.00 Td (Toronto, ON  |  han@example.com  |  \(416\) 555-0142  |  github.com/Han2006han) Tj ET
+BT /F1 9.0 Tf 0.360 0.360 0.450 rg 0.000 Tc 48.00 682.00 Td (Suzhou, China  |  sergeyhans529@gmail.com  |  +44 7763370061  |  github.com/Han2006han) Tj ET
 0.310 0.270 0.880 RG 1.4 w 48.00 672.00 m 564.00 672.00 l S
 BT /F2 9.0 Tf 0.310 0.270 0.880 rg 1.000 Tc 48.00 646.00 Td (SUMMARY) Tj ET
 0.860 0.860 0.940 RG 0.6 w 48.00 640.00 m 564.00 640.00 l S
@@ -100,5 +100,5 @@ xref
 trailer
 << /Size 8 /Root 1 0 R >>
 startxref
-7095
+7103
 %%EOF

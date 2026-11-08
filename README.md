@@ -184,17 +184,19 @@ These scripts are optional; the site runs without them.
 
 ---
 
-## Before you submit — replace the placeholders
+## Content notes
 
-The site is complete and runs as-is, but three pieces of content are deliberately generic:
+The contact details are set to the owner's real values: `sergeyhans529@gmail.com`,
+`+44 7763370061`, Suzhou, China and <https://github.com/Han2006han>.
+
+Two pieces of content remain generic and can be swapped without touching any code:
 
 1. `public/images/profile.png` — an illustrated portrait. Replace it with a real head-and-shoulders
-   photo (square, at least 640 × 640).
-2. `data/portfolio.js` — the email, phone number, GitHub URL, project details and biography.
-3. `public/docs/Han-Resume.pdf` — regenerate or replace it with your own resume.
+   photo (square, at least 640 × 640) if you prefer.
+2. `public/docs/Han-Resume.pdf` — regenerate with `tools/make_resume_pdf.py`, or drop in your own
+   PDF at the same path.
 
-Search for `han@example.com`, `(416) 555-0142` and `Han2006han` to find every place the sample
-contact details appear.
+Project write-ups and the biography live in `data/portfolio.js`.
 
 ## Credits
 

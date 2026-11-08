@@ -14,9 +14,9 @@
 const profile = {
   fullName: 'Han',
   headline: 'Web Developer & Computer Programming Student',
-  location: 'Toronto, ON, Canada',
-  email: 'han@example.com',
-  phone: '(416) 555-0142',
+  location: 'Suzhou, China',
+  email: 'sergeyhans529@gmail.com',
+  phone: '+44 7763370061',
   github: 'https://github.com/Han2006han',
   school: 'Centennial College',
   program: 'Software Engineering Technology',
