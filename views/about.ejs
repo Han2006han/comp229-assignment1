@@ -1,0 +1,126 @@
+<!--
+  File name: views/about.ejs
+  Student's Name: Han
+  Student ID: 2024110006
+  Date: 2026-11-08
+  Purpose: About Me page - legal name, head-and-shoulders photo, short introduction,
+           quick facts, skills and a link to the PDF resume.
+-->
+<%- include('partials/header') %>
+
+<!-- Page intro -->
+<section class="page-head">
+  <div class="container">
+    <p class="eyebrow">About me</p>
+    <h1 class="page-title">I&rsquo;m Han &mdash; a developer who likes the boring parts done right.</h1>
+    <p class="page-lead">
+      Legal name: <strong><%= profile.fullName %></strong> &middot; <%= profile.headline %> &middot;
+      <%= profile.location %>
+    </p>
+  </div>
+</section>
+
+<!-- Portrait and introduction -->
+<section class="section section-tight">
+  <div class="container about-grid">
+    <figure class="portrait">
+      <img src="/images/profile.png" alt="Head and shoulders portrait of Han" width="640" height="640">
+      <figcaption>
+        <span class="portrait-name"><%= profile.fullName %></span>
+        <span class="portrait-meta"><%= profile.program %>, <%= profile.school %></span>
+      </figcaption>
+    </figure>
+
+    <div class="about-copy">
+      <h2 class="section-title section-title-small">Who I am</h2>
+      <p><%= profile.bio %></p>
+      <p>
+        I am most useful when a project needs someone to sit between the design and the database:
+        turning a sketch into semantic markup, wiring the routes, and making sure the error states
+        are as considered as the happy path.
+      </p>
+
+      <dl class="fact-list">
+        <div><dt>Based in</dt><dd><%= profile.location %></dd></div>
+        <div><dt>Studying</dt><dd><%= profile.program %> at <%= profile.school %></dd></div>
+        <div><dt>Focus</dt><dd>Full-stack JavaScript, accessible interfaces</dd></div>
+        <div><dt>Looking for</dt><dd>Co-op or internship starting May 2027</dd></div>
+      </dl>
+
+      <div class="about-actions">
+        <a class="btn btn-primary" href="/docs/Han-Resume.pdf" target="_blank" rel="noopener noreferrer">
+          View my resume (PDF)
+        </a>
+        <a class="btn btn-ghost" href="/contact">Get in touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills grouped by area -->
+<section class="section section-muted" id="skills">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Toolkit</p>
+      <h2 class="section-title">What I work with</h2>
+    </div>
+
+    <div class="skill-grid">
+      <div class="skill-group">
+        <h3>Front end</h3>
+        <ul class="tag-list">
+          <li class="tag">HTML5</li>
+          <li class="tag">CSS3 &amp; Grid</li>
+          <li class="tag">JavaScript (ES2023)</li>
+          <li class="tag">React</li>
+          <li class="tag">Accessibility (WCAG 2.1)</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Back end</h3>
+        <ul class="tag-list">
+          <li class="tag">Node.js</li>
+          <li class="tag">Express</li>
+          <li class="tag">EJS</li>
+          <li class="tag">REST APIs</li>
+          <li class="tag">MongoDB</li>
+          <li class="tag">PostgreSQL</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3>Tools &amp; practice</h3>
+        <ul class="tag-list">
+          <li class="tag">Git &amp; GitHub</li>
+          <li class="tag">VS Code</li>
+          <li class="tag">Figma</li>
+          <li class="tag">Jest</li>
+          <li class="tag">Agile / Scrum</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education and resume call to action -->
+<section class="section">
+  <div class="container resume-band">
+    <div>
+      <p class="eyebrow">Resume</p>
+      <h2 class="section-title section-title-small">The one-page version</h2>
+      <p class="resume-text">
+        Education, projects, technical skills and work history, formatted for a two-minute read.
+        Opens in a new tab as a PDF.
+      </p>
+    </div>
+    <div class="resume-actions">
+      <a class="btn btn-primary" href="/docs/Han-Resume.pdf" target="_blank" rel="noopener noreferrer">
+        Open resume PDF
+      </a>
+      <a class="text-link" href="/contact">or send me an email <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

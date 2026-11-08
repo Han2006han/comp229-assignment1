@@ -1,0 +1,81 @@
+<!--
+  File name: views/services.ejs
+  Student's Name: Han
+  Student ID: 2024110006
+  Date: 2026-11-08
+  Purpose: Services page - what I offer, how a project runs, and a call to action.
+-->
+<%- include('partials/header') %>
+
+<!-- Page intro -->
+<section class="page-head">
+  <div class="container">
+    <p class="eyebrow">Services</p>
+    <h1 class="page-title">What I can build for you.</h1>
+    <p class="page-lead">
+      I take on small, well-defined projects where a working prototype beats a long proposal.
+      Everything below is work I have done before, not a wish list.
+    </p>
+  </div>
+</section>
+
+<!-- Service cards -->
+<section class="section section-tight">
+  <div class="container service-grid">
+    <% services.forEach(function (service) { %>
+      <%- include('partials/service-card', { service: service }) %>
+    <% }); %>
+  </div>
+</section>
+
+<!-- Working process -->
+<section class="section section-muted">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">How it works</p>
+      <h2 class="section-title">Four steps, no surprises</h2>
+    </div>
+
+    <ol class="process-list">
+      <li class="process-step">
+        <span class="process-number" aria-hidden="true">01</span>
+        <h3>Brief</h3>
+        <p>A short call or a written brief: what the site must do, who uses it, and what &ldquo;done&rdquo; means.</p>
+      </li>
+      <li class="process-step">
+        <span class="process-number" aria-hidden="true">02</span>
+        <h3>Prototype</h3>
+        <p>A clickable first version in the browser within the first week, so feedback is about the real thing.</p>
+      </li>
+      <li class="process-step">
+        <span class="process-number" aria-hidden="true">03</span>
+        <h3>Build</h3>
+        <p>Weekly pushes to a GitHub branch, with a running demo link you can open at any time.</p>
+      </li>
+      <li class="process-step">
+        <span class="process-number" aria-hidden="true">04</span>
+        <h3>Handover</h3>
+        <p>Deployment, a short README and a walkthrough recording. You keep the code and the accounts.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- Pricing / availability note and call to action -->
+<section class="section">
+  <div class="container cta-band">
+    <div>
+      <h2 class="cta-title">Student rates, professional habits.</h2>
+      <p class="cta-text">
+        Typical small site: two to four weeks. I take one freelance project at a time so it gets my
+        full attention.
+      </p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="/contact">Request a quote</a>
+      <a class="btn btn-ghost" href="/projects">See the work first</a>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,104 @@
+%PDF-1.4
+%ту╧╙
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 7 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 6472 >>
+stream
+BT /F2 26 Tf 0.080 0.080 0.160 rg 0.000 Tc 48.00 724.00 Td (HAN) Tj ET
+BT /F2 9.6 Tf 0.310 0.270 0.880 rg 1.100 Tc 48.00 698.00 Td (WEB DEVELOPER & COMPUTER PROGRAMMING STUDENT) Tj ET
+BT /F1 9.0 Tf 0.360 0.360 0.450 rg 0.000 Tc 48.00 682.00 Td (Toronto, ON  |  han@example.com  |  \(416\) 555-0142  |  github.com/Han2006han) Tj ET
+0.310 0.270 0.880 RG 1.4 w 48.00 672.00 m 564.00 672.00 l S
+BT /F2 9.0 Tf 0.310 0.270 0.880 rg 1.000 Tc 48.00 646.00 Td (SUMMARY) Tj ET
+0.860 0.860 0.940 RG 0.6 w 48.00 640.00 m 564.00 640.00 l S
+BT /F1 9.7 Tf 0.080 0.080 0.160 rg 0.000 Tc 48.00 625.00 Td (Second-year Software Engineering Technology student at Centennial College with hands-on experience building) Tj ET
+BT /F1 9.7 Tf 0.080 0.080 0.160 rg 0.000 Tc 48.00 612.40 Td (full-stack JavaScript applications. Comfortable across the stack: semantic HTML and CSS, Express routes and EJS) Tj ET
+BT /F1 9.7 Tf 0.080 0.080 0.160 rg 0.000 Tc 48.00 599.80 Td (templates, MongoDB data models, and the debugging that holds it all together. Looking for a co-op placement starting) Tj ET
+BT /F1 9.7 Tf 0.080 0.080 0.160 rg 0.000 Tc 48.00 587.20 Td (May 2027.) Tj ET
+BT /F2 9.0 Tf 0.310 0.270 0.880 rg 1.000 Tc 48.00 566.60 Td (EDUCATION) Tj ET
+0.860 0.860 0.940 RG 0.6 w 48.00 560.60 m 564.00 560.60 l S
+BT /F2 10.1 Tf 0.080 0.080 0.160 rg 0.000 Tc 48.00 545.60 Td (Centennial College - Software Engineering Technology \(Co-op\)) Tj ET
+BT /F1 9.2 Tf 0.360 0.360 0.450 rg 0.000 Tc 451.66 545.60 Td (Toronto, ON  |  2024 - 2027) Tj ET
+BT /F1 9.3 Tf 0.360 0.360 0.450 rg 0.000 Tc 48.00 533.00 Td (Advanced Diploma | GPA 3.8 / 4.0 | Dean's List, Fall 2025) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 50.00 521.00 Td (Х) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 62.00 521.00 Td (Relevant coursework: Web Application Development \(COMP229\), Java Programming, Database Concepts,) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 62.00 508.80 Td (Client-Side JavaScript.) Tj ET
+BT /F2 9.0 Tf 0.310 0.270 0.880 rg 1.000 Tc 48.00 489.40 Td (TECHNICAL SKILLS) Tj ET
+0.860 0.860 0.940 RG 0.6 w 48.00 483.40 m 564.00 483.40 l S
+BT /F2 9.5 Tf 0.080 0.080 0.160 rg 0.000 Tc 48.00 468.40 Td (Languages) Tj ET
+BT /F1 9.5 Tf 0.080 0.080 0.160 rg 0.000 Tc 140.00 468.40 Td (JavaScript \(ES2023\), HTML5, CSS3, Java, SQL) Tj ET
+BT /F2 9.5 Tf 0.080 0.080 0.160 rg 0.000 Tc 48.00 456.20 Td (Frameworks) Tj ET
+BT /F1 9.5 Tf 0.080 0.080 0.160 rg 0.000 Tc 140.00 456.20 Td (Node.js, Express, EJS, React, Bootstrap) Tj ET
+BT /F2 9.5 Tf 0.080 0.080 0.160 rg 0.000 Tc 48.00 444.00 Td (Data) Tj ET
+BT /F1 9.5 Tf 0.080 0.080 0.160 rg 0.000 Tc 140.00 444.00 Td (MongoDB, PostgreSQL, REST APIs, localStorage) Tj ET
+BT /F2 9.5 Tf 0.080 0.080 0.160 rg 0.000 Tc 48.00 431.80 Td (Tooling) Tj ET
+BT /F1 9.5 Tf 0.080 0.080 0.160 rg 0.000 Tc 140.00 431.80 Td (Git & GitHub, VS Code, Figma, Jest, Chrome DevTools) Tj ET
+BT /F2 9.5 Tf 0.080 0.080 0.160 rg 0.000 Tc 48.00 419.60 Td (Practice) Tj ET
+BT /F1 9.5 Tf 0.080 0.080 0.160 rg 0.000 Tc 140.00 419.60 Td (Accessibility \(WCAG 2.1\), responsive design, code review) Tj ET
+BT /F2 9.0 Tf 0.310 0.270 0.880 rg 1.000 Tc 48.00 399.40 Td (PROJECTS) Tj ET
+0.860 0.860 0.940 RG 0.6 w 48.00 393.40 m 564.00 393.40 l S
+BT /F2 10.1 Tf 0.080 0.080 0.160 rg 0.000 Tc 48.00 378.40 Td (Campus Course Planner) Tj ET
+BT /F1 9.2 Tf 0.360 0.360 0.450 rg 0.000 Tc 543.54 378.40 Td (2026) Tj ET
+BT /F1 9.2 Tf 0.360 0.360 0.450 rg 0.000 Tc 48.00 365.80 Td (Node.js | Express | MongoDB | EJS) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 50.00 354.20 Td (Х) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 62.00 354.20 Td (Built the Express API and data model that detects lecture and lab conflicts before registration.) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 50.00 340.80 Td (Х) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 62.00 340.80 Td (Adopted by roughly 200 students in its first term; reported timetable clashes fell from 31% to 4%.) Tj ET
+BT /F2 10.1 Tf 0.080 0.080 0.160 rg 0.000 Tc 48.00 323.40 Td (TaskFlow Board) Tj ET
+BT /F1 9.2 Tf 0.360 0.360 0.450 rg 0.000 Tc 543.54 323.40 Td (2025) Tj ET
+BT /F1 9.2 Tf 0.360 0.360 0.450 rg 0.000 Tc 48.00 310.80 Td (JavaScript | HTML5 drag events | localStorage) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 50.00 299.20 Td (Х) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 62.00 299.20 Td (Implemented a keyboard-operable kanban board with offline persistence; passed accessibility review with no critical) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 62.00 287.00 Td (issues.) Tj ET
+BT /F2 10.1 Tf 0.080 0.080 0.160 rg 0.000 Tc 48.00 269.60 Td (Weather Dashboard) Tj ET
+BT /F1 9.2 Tf 0.360 0.360 0.450 rg 0.000 Tc 543.54 269.60 Td (2025) Tj ET
+BT /F1 9.2 Tf 0.360 0.360 0.450 rg 0.000 Tc 48.00 257.00 Td (JavaScript | OpenWeather API | Chart.js) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 50.00 245.40 Td (Х) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 62.00 245.40 Td (Cut average load time to 0.9s on a throttled 3G profile and reduced API calls by 60% with a ten-minute cache.) Tj ET
+BT /F2 9.0 Tf 0.310 0.270 0.880 rg 1.000 Tc 48.00 226.00 Td (EXPERIENCE) Tj ET
+0.860 0.860 0.940 RG 0.6 w 48.00 220.00 m 564.00 220.00 l S
+BT /F2 10.1 Tf 0.080 0.080 0.160 rg 0.000 Tc 48.00 205.00 Td (Peer Tutor - Centennial College Learning Centre) Tj ET
+BT /F1 9.2 Tf 0.360 0.360 0.450 rg 0.000 Tc 440.42 205.00 Td (Toronto, ON  |  2025 - Present) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 50.00 192.40 Td (Х) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 62.00 192.40 Td (Run weekly drop-in sessions for first-year programming students on JavaScript fundamentals and debugging.) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 50.00 179.00 Td (Х) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 62.00 179.00 Td (Wrote a short troubleshooting guide that the department now hands out in COMP125 labs.) Tj ET
+BT /F2 9.0 Tf 0.310 0.270 0.880 rg 1.000 Tc 48.00 159.60 Td (ADDITIONAL) Tj ET
+0.860 0.860 0.940 RG 0.6 w 48.00 153.60 m 564.00 153.60 l S
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 50.00 138.60 Td (Х) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 62.00 138.60 Td (Languages: English \(fluent\), Mandarin \(native\).) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 50.00 125.20 Td (Х) Tj ET
+BT /F1 9.6 Tf 0.080 0.080 0.160 rg 0.000 Tc 62.00 125.20 Td (Available for co-op or internship starting May 2027; open to on-site work in the Greater Toronto Area.) Tj ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000267 00000 n 
+0000000364 00000 n 
+0000000466 00000 n 
+0000000571 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+7095
+%%EOF

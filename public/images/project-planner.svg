@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="plannerTitle">
+  <title id="plannerTitle">Campus Course Planner interface with a weekly timetable</title>
+  <defs>
+    <linearGradient id="plannerBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef0ff"/>
+      <stop offset="100%" stop-color="#f8f7ff"/>
+    </linearGradient>
+    <filter id="plannerShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="26" flood-color="#2b2b5e" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#plannerBg)"/>
+  <circle cx="1060" cy="110" r="160" fill="#8b5cf6" opacity="0.10"/>
+  <circle cx="110" cy="730" r="180" fill="#5b5bd6" opacity="0.08"/>
+
+  <!-- Application window -->
+  <g filter="url(#plannerShadow)">
+    <rect x="60" y="50" width="1080" height="700" rx="26" fill="#ffffff"/>
+  </g>
+
+  <!-- Browser chrome -->
+  <path d="M60 76a26 26 0 0 1 26-26h1028a26 26 0 0 1 26 26v30H60Z" fill="#fbfbfe"/>
+  <line x1="60" y1="106" x2="1140" y2="106" stroke="#edecf6"/>
+  <circle cx="96" cy="78" r="6" fill="#ff6b6b"/>
+  <circle cx="118" cy="78" r="6" fill="#fbbf24"/>
+  <circle cx="140" cy="78" r="6" fill="#34d399"/>
+  <rect x="430" y="64" width="340" height="28" rx="14" fill="#f1f1f8"/>
+  <text x="600" y="83" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#8a8aa3">planner.campus.dev</text>
+
+  <!-- Sidebar -->
+  <rect x="60" y="106" width="236" height="644" fill="#fafaff"/>
+  <line x1="296" y1="106" x2="296" y2="750" stroke="#eeedf7"/>
+  <rect x="92" y="134" width="36" height="36" rx="10" fill="#5b5bd6"/>
+  <text x="110" y="158" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">H</text>
+  <text x="142" y="158" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600" fill="#1f1f38">Planner</text>
+
+  <rect x="84" y="196" width="188" height="38" rx="10" fill="#eceafe"/>
+  <text x="104" y="221" font-family="Segoe UI, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#4338ca">Timetable</text>
+  <text x="104" y="266" font-family="Segoe UI, Arial, sans-serif" font-size="13.5" fill="#7c7c95">Courses</text>
+  <text x="104" y="306" font-family="Segoe UI, Arial, sans-serif" font-size="13.5" fill="#7c7c95">Requirements</text>
+  <text x="104" y="346" font-family="Segoe UI, Arial, sans-serif" font-size="13.5" fill="#7c7c95">Export</text>
+  <text x="104" y="386" font-family="Segoe UI, Arial, sans-serif" font-size="13.5" fill="#7c7c95">Settings</text>
+
+  <rect x="84" y="640" width="188" height="76" rx="14" fill="#f3f2ff"/>
+  <text x="104" y="668" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#7c7c95">Registration opens</text>
+  <text x="104" y="690" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#4338ca">Nov 18</text>
+
+  <!-- Main heading -->
+  <text x="332" y="152" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#141428">My timetable</text>
+  <text x="332" y="178" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#8a8aa3">Fall 2026 · 5 courses · no conflicts</text>
+  <rect x="1002" y="128" width="106" height="34" rx="17" fill="#ecfdf5"/>
+  <circle cx="1024" cy="145" r="4" fill="#10b981"/>
+  <text x="1036" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#047857">No clashes</text>
+
+  <!-- Week header -->
+  <rect x="380" y="206" width="728" height="34" rx="10" fill="#f7f7fd"/>
+  <text x="452" y="228" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#5d5d78">Mon</text>
+  <text x="598" y="228" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#5d5d78">Tue</text>
+  <text x="744" y="228" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#5d5d78">Wed</text>
+  <text x="890" y="228" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#5d5d78">Thu</text>
+  <text x="1036" y="228" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#5d5d78">Fri</text>
+
+  <!-- Grid lines -->
+  <g stroke="#f0eff8">
+    <line x1="380" y1="280" x2="1108" y2="280"/>
+    <line x1="380" y1="372" x2="1108" y2="372"/>
+    <line x1="380" y1="464" x2="1108" y2="464"/>
+    <line x1="380" y1="556" x2="1108" y2="556"/>
+    <line x1="380" y1="648" x2="1108" y2="648"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#a3a3b8" text-anchor="end">
+    <text x="366" y="256">09:00</text>
+    <text x="366" y="348">11:00</text>
+    <text x="366" y="440">13:00</text>
+    <text x="366" y="532">15:00</text>
+    <text x="366" y="624">17:00</text>
+  </g>
+
+  <!-- Course blocks -->
+  <g>
+    <rect x="386" y="240" width="134" height="82" rx="10" fill="#eceafe"/>
+    <rect x="386" y="240" width="4" height="82" rx="2" fill="#5b5bd6"/>
+    <text x="402" y="264" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#3730a3">COMP229</text>
+    <text x="402" y="282" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#5b5bd6">Web App Dev</text>
+    <text x="402" y="298" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#7c7c95">09:00 · Room 214</text>
+    <text x="402" y="314" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#7c7c95">Prof. Lee</text>
+
+    <rect x="386" y="432" width="134" height="82" rx="10" fill="#f3efff"/>
+    <rect x="386" y="432" width="4" height="82" rx="2" fill="#8b5cf6"/>
+    <text x="402" y="456" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#5b21b6">COMP123</text>
+    <text x="402" y="474" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#7c3aed">Programming II</text>
+    <text x="402" y="490" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#7c7c95">13:00 · Lab B</text>
+
+    <rect x="532" y="280" width="134" height="82" rx="10" fill="#e8f4ff"/>
+    <rect x="532" y="280" width="4" height="82" rx="2" fill="#0ea5e9"/>
+    <text x="548" y="304" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#075985">COMP125</text>
+    <text x="548" y="322" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#0284c7">Client-Side JS</text>
+    <text x="548" y="338" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#7c7c95">11:00 · Room 118</text>
+
+    <rect x="678" y="240" width="134" height="82" rx="10" fill="#eceafe"/>
+    <rect x="678" y="240" width="4" height="82" rx="2" fill="#5b5bd6"/>
+    <text x="694" y="264" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#3730a3">COMP229</text>
+    <text x="694" y="282" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#5b5bd6">Lab session</text>
+    <text x="694" y="298" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#7c7c95">09:00 · Lab 3</text>
+
+    <rect x="824" y="340" width="134" height="82" rx="10" fill="#fff5e6"/>
+    <rect x="824" y="340" width="4" height="82" rx="2" fill="#f59e0b"/>
+    <text x="840" y="364" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#92400e">COMP228</text>
+    <text x="840" y="382" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#b45309">Java Programming</text>
+    <text x="840" y="398" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#7c7c95">13:30 · Room 301</text>
+
+    <rect x="824" y="524" width="134" height="82" rx="10" fill="#e9fbf3"/>
+    <rect x="824" y="524" width="4" height="82" rx="2" fill="#10b981"/>
+    <text x="840" y="548" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#065f46">COMP237</text>
+    <text x="840" y="566" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#047857">Intro to AI</text>
+    <text x="840" y="582" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#7c7c95">16:00 · Online</text>
+
+    <rect x="970" y="280" width="134" height="82" rx="10" fill="#f3efff"/>
+    <rect x="970" y="280" width="4" height="82" rx="2" fill="#8b5cf6"/>
+    <text x="986" y="304" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#5b21b6">COMP123</text>
+    <text x="986" y="322" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#7c3aed">Tutorial</text>
+    <text x="986" y="338" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" fill="#7c7c95">11:00 · Room 210</text>
+  </g>
+
+  <!-- Legend -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="11.5" fill="#7c7c95">
+    <rect x="386" y="676" width="10" height="10" rx="3" fill="#5b5bd6"/>
+    <text x="404" y="685">Web</text>
+    <rect x="452" y="676" width="10" height="10" rx="3" fill="#8b5cf6"/>
+    <text x="470" y="685">Programming</text>
+    <rect x="566" y="676" width="10" height="10" rx="3" fill="#0ea5e9"/>
+    <text x="584" y="685">Client-side</text>
+    <rect x="676" y="676" width="10" height="10" rx="3" fill="#f59e0b"/>
+    <text x="694" y="685">Java</text>
+    <text x="1108" y="685" text-anchor="end" fill="#a3a3b8">12.5 credits · full-time</text>
+  </g>
+</svg>

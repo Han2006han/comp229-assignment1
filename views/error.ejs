@@ -1,0 +1,33 @@
+<!--
+  File name: views/error.ejs
+  Student's Name: Han
+  Student ID: 2024110006
+  Date: 2026-11-08
+  Purpose: friendly error page for 404s and server errors.
+-->
+<%- include('partials/header') %>
+
+<section class="page-head error-page">
+  <div class="container">
+    <p class="eyebrow">Error <%= error.status || 500 %></p>
+    <h1 class="page-title">
+      <% if (error.status === 404) { %>
+        This page took a wrong turn.
+      <% } else { %>
+        Something broke on my side.
+      <% } %>
+    </h1>
+    <p class="page-lead"><%= message %></p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="/">Back to the home page</a>
+      <a class="btn btn-ghost" href="/contact">Report the problem</a>
+    </div>
+
+    <% if (error.stack && error.status !== 404) { %>
+      <pre class="error-stack"><code><%= error.stack %></code></pre>
+    <% } %>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

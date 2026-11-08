@@ -1,0 +1,20 @@
+# Normalise text files to LF so the project behaves the same on Windows, macOS and Linux
+* text=auto eol=lf
+
+# Binary assets must never go through line-ending conversion
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.woff binary
+*.woff2 binary
+
+# Source files that are always text
+*.js   text
+*.ejs  text
+*.css  text
+*.json text
+*.md   text
+*.svg  text

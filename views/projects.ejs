@@ -1,0 +1,49 @@
+<!--
+  File name: views/projects.ejs
+  Student's Name: Han
+  Student ID: 2024110006
+  Date: 2026-11-08
+  Purpose: Projects page - three highlighted projects with images, role and outcome.
+-->
+<%- include('partials/header') %>
+
+<!-- Page intro -->
+<section class="page-head">
+  <div class="container">
+    <p class="eyebrow">Projects</p>
+    <h1 class="page-title">Work I can walk you through line by line.</h1>
+    <p class="page-lead">
+      Three projects that taught me the most: a planning tool for my campus, a kanban board built
+      for the keyboard, and a weather dashboard that had to be fast on a bad connection.
+    </p>
+  </div>
+</section>
+
+<!-- Project list -->
+<section class="section section-tight">
+  <div class="container project-list">
+    <% projects.forEach(function (project) { %>
+      <%- include('partials/project-card', { project: project, detailed: true }) %>
+    <% }); %>
+  </div>
+</section>
+
+<!-- Link out to source code -->
+<section class="section section-muted">
+  <div class="container cta-band">
+    <div>
+      <h2 class="cta-title">Source code lives on GitHub</h2>
+      <p class="cta-text">
+        Each project has a README with setup steps, screenshots and the trade-offs I made along the way.
+      </p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="https://github.com/Han2006han" target="_blank" rel="noopener noreferrer">
+        Browse my GitHub
+      </a>
+      <a class="btn btn-ghost" href="/contact">Ask me about a project</a>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

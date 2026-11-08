@@ -1,0 +1,83 @@
+<!--
+  File name: views/index.ejs
+  Student's Name: Han
+  Student ID: 2024110006
+  Date: 2026-11-08
+  Purpose: Home page - welcome message, mission statement, highlights and featured work.
+-->
+<%- include('partials/header') %>
+
+<% if (messageSent) { %>
+  <!-- Success feedback shown after the contact form redirects back to Home -->
+  <div class="container">
+    <div class="alert alert-success" role="status">
+      <strong>Message received.</strong> Thanks for reaching out &mdash; I will reply to you within two
+      business days. You have been returned to the home page as requested.
+    </div>
+  </div>
+<% } %>
+
+<%- include('partials/content') %>
+
+<!-- Highlights strip: quick numbers that support the introduction -->
+<section class="section section-tight" aria-label="Quick facts">
+  <div class="container">
+    <ul class="stats">
+      <% highlights.forEach(function (highlight) { %>
+        <li class="stat">
+          <span class="stat-value"><%= highlight.value %></span>
+          <span class="stat-label"><%= highlight.label %></span>
+        </li>
+      <% }); %>
+    </ul>
+  </div>
+</section>
+
+<!-- Mission statement -->
+<section class="section" id="mission">
+  <div class="container mission-grid">
+    <div class="section-heading">
+      <p class="eyebrow">Mission statement</p>
+      <h2 class="section-title">Good software should feel obvious in hindsight.</h2>
+    </div>
+    <blockquote class="mission-quote">
+      <p><%= profile.mission %></p>
+      <footer>Han &middot; <%= profile.headline %></footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- Featured projects -->
+<section class="section section-muted" id="featured-work">
+  <div class="container">
+    <div class="section-head section-head-row">
+      <div>
+        <p class="eyebrow">Selected work</p>
+        <h2 class="section-title">Three projects I keep coming back to</h2>
+      </div>
+      <a class="btn btn-ghost btn-small" href="/projects">All projects</a>
+    </div>
+
+    <div class="project-grid">
+      <% projects.forEach(function (project) { %>
+        <%- include('partials/project-card', { project: project }) %>
+      <% }); %>
+    </div>
+  </div>
+</section>
+
+<!-- Closing call to action -->
+<section class="section">
+  <div class="container cta-band">
+    <div>
+      <h2 class="cta-title">Have a project, an internship or a stubborn bug?</h2>
+      <p class="cta-text">Send me a note. I read everything and reply within two business days.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="/contact">Start a conversation</a>
+      <a class="btn btn-ghost" href="/docs/Han-Resume.pdf" target="_blank" rel="noopener noreferrer">Download resume</a>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

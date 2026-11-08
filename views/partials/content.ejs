@@ -1,0 +1,56 @@
+<!--
+  File name: views/partials/content.ejs
+  Student's Name: Han
+  Student ID: 2024110006
+  Date: 2026-11-08
+  Purpose: the home page hero content, kept as a partial so the Home view stays readable.
+-->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Open to internships and freelance work</p>
+      <h1 class="hero-title">
+        Hi, I&rsquo;m Han. I build <span class="grad-text">web things</span> that actually work.
+      </h1>
+      <p class="hero-lead">
+        Computer Programming student at Centennial College, writing full-stack JavaScript by day
+        and fixing my own bugs by night. This site collects the work I am proud of and the services
+        I can help you with.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/projects">See my projects</a>
+        <a class="btn btn-ghost" href="/about">More about me</a>
+      </div>
+      <ul class="hero-meta">
+        <li><span aria-hidden="true">&#9679;</span> Toronto, ON</li>
+        <li><span aria-hidden="true">&#9679;</span> Express &amp; EJS</li>
+        <li><span aria-hidden="true">&#9679;</span> Available May 2027</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="code-card">
+        <div class="code-card-bar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-amber"></span>
+          <span class="dot dot-green"></span>
+          <em>server.js</em>
+        </div>
+        <pre class="code-body"><code><span class="tok-key">const</span> express = <span class="tok-fn">require</span>(<span class="tok-str">'express'</span>)
+<span class="tok-key">const</span> app = <span class="tok-fn">express</span>()
+
+app.<span class="tok-fn">get</span>(<span class="tok-str">'/'</span>, (req, res) =&gt; {
+  res.<span class="tok-fn">render</span>(<span class="tok-str">'index'</span>, {
+    title: <span class="tok-str">'Han &mdash; Portfolio'</span>,
+    ready: <span class="tok-key">true</span>
+  })
+})
+
+app.<span class="tok-fn">listen</span>(<span class="tok-num">3000</span>)</code></pre>
+      </div>
+      <span class="floating-chip chip-one">Express</span>
+      <span class="floating-chip chip-two">EJS</span>
+      <span class="floating-chip chip-three">Node.js</span>
+    </div>
+  </div>
+</section>

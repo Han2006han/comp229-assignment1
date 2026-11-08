@@ -1,0 +1,39 @@
+<!--
+  File name: views/partials/service-card.ejs
+  Student's Name: Han
+  Student ID: 2024110006
+  Date: 2026-11-08
+  Purpose: reusable service card with an inline icon, description and bullet points.
+-->
+<article class="service-card">
+  <span class="service-icon" aria-hidden="true">
+    <% if (service.icon === 'code') { %>
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m9 18-6-6 6-6"/><path d="m15 6 6 6-6 6"/>
+      </svg>
+    <% } else if (service.icon === 'server') { %>
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/>
+        <path d="M7 6.5h.01M7 17.5h.01"/>
+      </svg>
+    <% } else if (service.icon === 'mobile') { %>
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 19h2"/>
+      </svg>
+    <% } else { %>
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3v3M12 18v3M4.2 7.5l2.6 1.5M17.2 15l2.6 1.5M4.2 16.5l2.6-1.5M17.2 9l2.6-1.5"/>
+        <circle cx="12" cy="12" r="3.2"/>
+      </svg>
+    <% } %>
+  </span>
+
+  <h3 class="service-title"><%= service.title %></h3>
+  <p class="service-description"><%= service.description %></p>
+
+  <ul class="check-list">
+    <% service.points.forEach(function (point) { %>
+      <li><%= point %></li>
+    <% }); %>
+  </ul>
+</article>

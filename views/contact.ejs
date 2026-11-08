@@ -1,0 +1,178 @@
+<!--
+  File name: views/contact.ejs
+  Student's Name: Han
+  Student ID: 2024110006
+  Date: 2026-11-08
+  Purpose: Contact page - details panel plus an interactive form that captures the
+           submission and redirects the visitor back to the Home page.
+-->
+<%- include('partials/header') %>
+
+<!-- Page intro -->
+<section class="page-head">
+  <div class="container">
+    <p class="eyebrow">Contact</p>
+    <h1 class="page-title">Tell me what you&rsquo;re building.</h1>
+    <p class="page-lead">
+      Use the form or email me directly. I answer every message within two business days, even the
+      ones that turn into &ldquo;not a fit&rdquo;.
+    </p>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="container contact-grid">
+    <!-- Contact details panel -->
+    <aside class="contact-panel" aria-labelledby="contact-details-heading">
+      <h2 class="contact-panel-title" id="contact-details-heading">Contact details</h2>
+
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label">Email</span>
+          <a href="mailto:<%= profile.email %>"><%= profile.email %></a>
+        </li>
+        <li>
+          <span class="contact-label">Phone</span>
+          <a href="tel:+14165550142"><%= profile.phone %></a>
+        </li>
+        <li>
+          <span class="contact-label">Location</span>
+          <span><%= profile.location %></span>
+        </li>
+        <li>
+          <span class="contact-label">GitHub</span>
+          <a href="<%= profile.github %>" target="_blank" rel="noopener noreferrer">github.com/Han2006han</a>
+        </li>
+        <li>
+          <span class="contact-label">Resume</span>
+          <a href="/docs/Han-Resume.pdf" target="_blank" rel="noopener noreferrer">PDF, one page</a>
+        </li>
+      </ul>
+
+      <div class="contact-note">
+        <h3>Response time</h3>
+        <p>Usually the same day, always within two business days. Time zone: Eastern (UTC&minus;5).</p>
+      </div>
+    </aside>
+
+    <!-- Message form -->
+    <div class="contact-form-wrap">
+      <h2 class="contact-panel-title">Send a message</h2>
+
+      <% if (Object.keys(errors).length > 0) { %>
+        <!-- Validation summary: focusable so screen readers announce it -->
+        <div class="alert alert-error" role="alert" tabindex="-1" id="form-error-summary">
+          <strong>Please fix the highlighted fields.</strong>
+          <ul>
+            <% Object.keys(errors).forEach(function (field) { %>
+              <li><%= errors[field] %></li>
+            <% }); %>
+          </ul>
+        </div>
+      <% } %>
+
+      <form class="contact-form" action="/contact" method="post" novalidate data-contact-form>
+        <div class="field-row">
+          <div class="field">
+            <label for="firstName">First name <span class="required" aria-hidden="true">*</span></label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              value="<%= form.firstName %>"
+              autocomplete="given-name"
+              required
+              minlength="2"
+              <% if (errors.firstName) { %>aria-invalid="true" aria-describedby="firstName-error"<% } %>>
+            <% if (errors.firstName) { %>
+              <p class="field-error" id="firstName-error"><%= errors.firstName %></p>
+            <% } %>
+          </div>
+
+          <div class="field">
+            <label for="lastName">Last name <span class="required" aria-hidden="true">*</span></label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              value="<%= form.lastName %>"
+              autocomplete="family-name"
+              required
+              minlength="2"
+              <% if (errors.lastName) { %>aria-invalid="true" aria-describedby="lastName-error"<% } %>>
+            <% if (errors.lastName) { %>
+              <p class="field-error" id="lastName-error"><%= errors.lastName %></p>
+            <% } %>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="email">Email address <span class="required" aria-hidden="true">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value="<%= form.email %>"
+              autocomplete="email"
+              required
+              <% if (errors.email) { %>aria-invalid="true" aria-describedby="email-error"<% } %>>
+            <% if (errors.email) { %>
+              <p class="field-error" id="email-error"><%= errors.email %></p>
+            <% } %>
+          </div>
+
+          <div class="field">
+            <label for="phone">Contact number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              value="<%= form.phone %>"
+              autocomplete="tel"
+              <% if (errors.phone) { %>aria-invalid="true" aria-describedby="phone-error"<% } %>>
+            <% if (errors.phone) { %>
+              <p class="field-error" id="phone-error"><%= errors.phone %></p>
+            <% } %>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="subject">What is this about?</label>
+          <select id="subject" name="subject">
+            <option value="general" <%= form.subject === 'general' || !form.subject ? 'selected' : '' %>>General question</option>
+            <option value="project" <%= form.subject === 'project' ? 'selected' : '' %>>New project</option>
+            <option value="internship" <%= form.subject === 'internship' ? 'selected' : '' %>>Internship or co-op</option>
+            <option value="mentoring" <%= form.subject === 'mentoring' ? 'selected' : '' %>>Code review or tutoring</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            minlength="10"
+            maxlength="1000"
+            data-message-input
+            <% if (errors.message) { %>aria-invalid="true" aria-describedby="message-error message-count"<% } else { %>aria-describedby="message-count"<% } %>><%= form.message %></textarea>
+          <p class="field-hint" id="message-count" data-message-count>0 / 1000 characters</p>
+          <% if (errors.message) { %>
+            <p class="field-error" id="message-error"><%= errors.message %></p>
+          <% } %>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-note">
+            Your details are used only to reply to this message, then you are taken back to the Home page.
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

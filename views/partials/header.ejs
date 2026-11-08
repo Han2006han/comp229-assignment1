@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    File name: views/partials/header.ejs
+    Student's Name: Han
+    Student ID: 2024110006
+    Date: 2026-11-08
+    Purpose: shared document head and primary navigation for every page.
+  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= pageTitle %> &middot; Han &mdash; Web Developer</title>
+  <meta name="description" content="Portfolio of Han, a web developer and Computer Programming student in Toronto. Projects, services and contact details.">
+  <meta name="theme-color" content="#5b5bd6">
+  <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Site header: brand, mobile toggle and primary navigation -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Han, back to home">
+        <%- include('logo') %>
+        <span class="brand-name">Han<span class="brand-dot">.</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="site-nav" id="primary-navigation" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="/" <% if (activePage === 'home') { %>aria-current="page"<% } %>>Home</a></li>
+          <li><a class="nav-link" href="/about" <% if (activePage === 'about') { %>aria-current="page"<% } %>>About</a></li>
+          <li><a class="nav-link" href="/projects" <% if (activePage === 'projects') { %>aria-current="page"<% } %>>Projects</a></li>
+          <li><a class="nav-link" href="/services" <% if (activePage === 'services') { %>aria-current="page"<% } %>>Services</a></li>
+          <li><a class="nav-link" href="/contact" <% if (activePage === 'contact') { %>aria-current="page"<% } %>>Contact</a></li>
+        </ul>
+        <a class="btn btn-primary btn-small nav-cta" href="/contact">Let&rsquo;s talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">

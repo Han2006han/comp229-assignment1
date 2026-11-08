@@ -1,0 +1,42 @@
+<!--
+  File name: views/partials/project-card.ejs
+  Student's Name: Han
+  Student ID: 2024110006
+  Date: 2026-11-08
+  Purpose: reusable project card (image, role, stack and outcome) used by Home and Projects.
+-->
+<article class="project-card" id="<%= project.id %>">
+  <div class="project-media">
+    <img src="<%= project.image %>" alt="<%= project.imageAlt %>" width="1200" height="800" loading="lazy">
+  </div>
+
+  <div class="project-body">
+    <div class="project-heading">
+      <h3 class="project-title"><%= project.title %></h3>
+      <span class="project-year"><%= project.year %></span>
+    </div>
+
+    <p class="project-summary"><%= project.summary %></p>
+
+    <% if (typeof detailed !== 'undefined' && detailed) { %>
+      <p class="project-description"><%= project.description %></p>
+    <% } %>
+
+    <dl class="project-facts">
+      <div>
+        <dt>Role</dt>
+        <dd><%= project.role %></dd>
+      </div>
+      <div>
+        <dt>Outcome</dt>
+        <dd><%= project.outcome %></dd>
+      </div>
+    </dl>
+
+    <ul class="tag-list" aria-label="Technologies used">
+      <% project.stack.forEach(function (technology) { %>
+        <li class="tag"><%= technology %></li>
+      <% }); %>
+    </ul>
+  </div>
+</article>
