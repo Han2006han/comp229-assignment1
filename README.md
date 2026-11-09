@@ -135,29 +135,33 @@ comp229-assignment1/
 **Submission (5 + 5 marks)**
 
 - Source archive: `Han-2024110006-COMP229-Assignment1.zip` (project files without `node_modules`).
-- GitHub: <https://github.com/Han2006han/comp229-assignment1> (see *Publishing to GitHub* below).
+- GitHub: <https://github.com/Han2006han/comp229-assignment1>
 
 ---
 
-## Publishing to GitHub
+## Repository
 
-The repository is already initialised and committed on the `main` branch, with the remote configured:
+The `main` branch is published at <https://github.com/Han2006han/comp229-assignment1>, with the
+remote already configured:
 
 ```bash
 git remote -v
 # origin  https://github.com/Han2006han/comp229-assignment1.git
+git status
+# Your branch is up to date with 'origin/main'
 ```
 
-Create the empty repository `comp229-assignment1` under the `Han2006han` account on GitHub (do **not**
-add a README, .gitignore or licence there), then push:
+Future changes only need a commit and a push:
 
 ```bash
-git push -u origin main
+git add -A
+git commit -m "Describe the change"
+git push
 ```
 
 GitHub no longer accepts an account password for Git operations. When prompted for a password, paste a
-**personal access token** (GitHub → Settings → Developer settings → Personal access tokens → Fine-grained
-tokens, with *Contents: Read and write* on this repository). Git Credential Manager will remember it.
+**personal access token** (Settings → Developer settings → Personal access tokens → Fine-grained tokens,
+with *Contents: Read and write* on this repository), or sign in through Git Credential Manager.
 
 
 ---
